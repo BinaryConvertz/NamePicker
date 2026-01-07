@@ -1,3 +1,5 @@
+import App.App;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -7,10 +9,12 @@ void main() {
     JFrame frame = new JFrame();
     JLabel label = new JLabel();
     GenerateFirstName(frame, label);
+
+    App app = new App();
+    app.start();
 }
 
 void Label(JLabel label, JFrame frame) {
-
     var listFirst = List.of("Ryan", "Peter", "Luke", "Manny");
     var listLast = List.of("James", "Johnson", "Manna", "Danvers");
 
